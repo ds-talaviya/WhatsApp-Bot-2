@@ -76,7 +76,7 @@ app.get("/api/qr", async (req, res) => {
     if (!session) {
         console.log(`🚀 Starting new session for ${clientId}`);
         await startSession(clientId);
-        session = sessions.get(clientId);
+        session = sessions.get(clientId); 
     }
 
     const { isConnected, latestQr } = session;
