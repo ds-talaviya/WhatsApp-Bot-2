@@ -1,10 +1,14 @@
-
 import fs from "fs";
 import path from "path";
 
-const baseDir = path.join(process.cwd(), "auth_info"); // change path if needed
+const baseDir = path.join(process.cwd(), "auth_info"); // top-level folder
 
-function deleteOldSessionFiles(dir) {
+export function deleteOldSessionFiles(dir = baseDir) {
+    if (!fs.existsSync(dir)) {
+        console.warn("⚠️ Directory not found:", dir);
+        return;
+    }
+
     const qrFolder = path.join(dir, "qr");
 
     if (fs.existsSync(qrFolder)) {
@@ -18,17 +22,18 @@ function deleteOldSessionFiles(dir) {
                 file.startsWith("sender-key-status@broadcast-") ||
                 file.startsWith("lid-mapping-")
             ) {
-                fs.unlinkSync(path.join(qrFolder, file));
-                console.log("🧹 Deleted:", path.join(qrFolder, file));
+                try {
+                    fs.unlinkSync(path.join(qrFolder, file));
+                    // console.log("🧹 Deleted:", path.join(qrFolder, file));
+                } catch (err) {
+                    // console.error("❌ Error deleting file:", err.message);
+                }
             }
         });
     }
 
-    // recurse into subdirectories
+    // Recurse into subdirectories (skip qr folders)
     fs.readdirSync(dir, { withFileTypes: true })
         .filter(f => f.isDirectory() && f.name !== "qr")
         .forEach(f => deleteOldSessionFiles(path.join(dir, f.name)));
 }
-
-deleteOldSessionFiles(baseDir);
-console.log("✅ Cleanup complete!");
