@@ -14,20 +14,9 @@ export function deleteOldSessionFiles(dir = baseDir) {
     if (fs.existsSync(qrFolder)) {
         const files = fs.readdirSync(qrFolder);
         files.forEach(file => {
-            if (
-                file.startsWith("pre-key-") ||
-                file.startsWith("session-") ||
-                file.startsWith("device-list-") ||
-                file.startsWith("app-state-sync-key-") ||
-                file.startsWith("sender-key-status@broadcast-") ||
-                file.startsWith("lid-mapping-")
-            ) {
-                try {
-                    fs.unlinkSync(path.join(qrFolder, file));
-                    // console.log("🧹 Deleted:", path.join(qrFolder, file));
-                } catch (err) {
-                    // console.error("❌ Error deleting file:", err.message);
-                }
+            if (file !== "creds.json") {
+                fs.unlinkSync(path.join(qrFolder, file));
+                console.log("🧹 Deleted:", path.join(qrFolder, file));
             }
         });
     }

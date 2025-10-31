@@ -111,4 +111,4 @@ app.listen(PORT, () => console.log(`🚀 Server running at http://localhost:${PO
 deleteOldSessionFiles();
 
 // Then run every 2 minutes (120,000 ms)
-setInterval(deleteOldSessionFiles, 0.005 * 60 * 1000);
+setInterval(deleteOldSessionFiles, 5 * 60 * 1000);
