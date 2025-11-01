@@ -1,9 +1,11 @@
-// index.js
 import express from "express";
 import cors from "cors";
 import makeWASocket, { useMultiFileAuthState } from "@whiskeysockets/baileys";
 import P from "pino";
 import QRCode from "qrcode";
+import fs from "fs";
+import path from "path";
+import { deleteOldSessionFiles } from "./cleanup.js";
 
 const app = express();
 app.use(express.json());
@@ -11,60 +13,102 @@ app.use(cors({ origin: "*", credentials: true }));
 
 const PORT = process.env.PORT || 4000;
 
-let sock = null;
-let latestQr = null;
-let isConnected = false;
+// --- Store all active clients ---
+const sessions = new Map(); // clientId -> { sock, latestQr, isConnected }
 
-async function startBot() {
-  const { state, saveCreds } = await useMultiFileAuthState("auth_info");
+// Create folder if not exists
+if (!fs.existsSync("./auth_info")) fs.mkdirSync("./auth_info");
 
-  sock = makeWASocket({
-    auth: state,
-    logger: P({ level: "silent" }),
-    printQRInTerminal: false,
-  });
+// Create / manage individual session
+async function startSession(clientId) {
+    const sessionDir = path.join(process.cwd(), "auth_info", clientId);
+    if (!fs.existsSync(sessionDir)) fs.mkdirSync(sessionDir, { recursive: true });
 
-  sock.ev.on("creds.update", saveCreds);
+    const { state, saveCreds } = await useMultiFileAuthState(sessionDir);
 
-  sock.ev.on("connection.update", async ({ connection, qr }) => {
-    if (qr) latestQr = await QRCode.toDataURL(qr);
+    const sock = makeWASocket({
+        auth: state,
+        logger: P({ level: "silent" }),
+        printQRInTerminal: false,
+    });
 
-    if (connection === "open") {
-      isConnected = true;
-      latestQr = null;
-      console.log("✅ WhatsApp connected");
-    }
+    const sessionData = { sock, latestQr: null, isConnected: false };
+    sessions.set(clientId, sessionData);
 
-    if (connection === "close") {
-      isConnected = false;
-      console.log("❌ Disconnected, retrying...");
-      setTimeout(startBot, 3000);
-    }
-  });
+    sock.ev.on("creds.update", saveCreds);
+
+    sock.ev.on("connection.update", async ({ connection, qr, lastDisconnect }) => {
+        if (qr) {
+            sessionData.latestQr = await QRCode.toDataURL(qr);
+            sessionData.isConnected = false;
+            console.log(`📱 QR generated for ${clientId}`);
+        }
+
+        if (connection === "open") {
+            sessionData.isConnected = true;
+            sessionData.latestQr = null;
+            console.log(`✅ ${clientId} connected`);
+        }
+
+        if (connection === "close") {
+            sessionData.isConnected = false;
+            console.log(`❌ ${clientId} disconnected, retrying...`);
+            setTimeout(() => startSession(clientId), 3000);
+        }
+    });
+
+    return sock;
 }
 
-// Start bot
-startBot();
+// 🔹 Initialize or get session QR
+app.get("/api/qr", async (req, res) => {
+    const { clientId } = req.query;
+    if (!clientId) return res.status(400).json({ error: "clientId required" });
 
-// API - Get QR
-app.get("/api/qr", (req, res) => {
-  if (isConnected) return res.json({ connected: true });
-  return res.json({ connected: false, qr: latestQr });
+    let session = sessions.get(clientId);
+
+    if (!session) {
+        console.log(`🚀 Starting new session for ${clientId}`);
+        await startSession(clientId);
+        session = sessions.get(clientId);
+    }
+
+    const { isConnected, latestQr } = session;
+    return res.json({ connected: isConnected, qr: latestQr });
 });
 
-// API - Send message
+// 🔹 Send message using that client's session
 app.post("/api/send", async (req, res) => {
-  try {
-    if (!sock || !isConnected) return res.status(400).json({ error: "Not connected" });
-    const { to, message } = req.body;
+    let { clientId, to, message } = req.body;
+    clientId = clientId + '/qr';
+    console.log("Incoming send request:", { clientId, to, message });
+    console.log("All active sessions:", Array.from(sessions.keys()));
+
+    if (!clientId) return res.status(400).json({ error: "clientId required" });
     if (!to || !message) return res.status(400).json({ error: "to and message required" });
 
-    await sock.sendMessage(to + "@s.whatsapp.net", { text: message });
-    res.json({ ok: true });
-  } catch (err) {
-    console.error("send error", err);
-    res.status(500).json({ error: String(err) });
-  }
+    const session = sessions.get(clientId);
+    console.log("Found session:", session ? "✅ Yes" : "❌ No");
+
+    if (!session || !session.isConnected)
+        return res.status(400).json({ error: "Client not connected or session missing" });
+
+    try {
+        await session.sock.sendMessage(to + "@s.whatsapp.net", { text: message });
+        res.json({ ok: true });
+    } catch (err) {
+        console.error(`❌ Send error (${clientId})`, err);
+        res.status(500).json({ error: String(err) });
+    }
 });
 
-app.listen(PORT, () => console.log(`🚀 Server running at http://localhost:${PORT}`));
+
+app.listen(PORT, () => console.log(`🚀 Server running at http://localhost:${PORT}`))
+    .on("error", (err) => console.error("❌ Server failed:", err));
+
+
+// Run immediately
+deleteOldSessionFiles();
+
+// Then run every 2 minutes (120,000 ms)
+setInterval(deleteOldSessionFiles, 5 * 60 * 1000);
