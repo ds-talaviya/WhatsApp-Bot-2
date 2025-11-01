@@ -1,4 +1,6 @@
-/auth_info# dependencies
+/auth_info
+
+# dependencies
 node_modules/
 
 # logs
