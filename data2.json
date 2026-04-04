@@ -1,0 +1,996 @@
+{
+  "savedFilters_Leads": [
+    {
+      "name": "test1",
+      "value": {
+        "Keyword": "",
+        "PageNumber": 1,
+        "PageSize": 20,
+        "UserId": null,
+        "TeamId": null,
+        "leadType": "ACTIVELEAD",
+        "SelectedTeam": null,
+        "ProjectId": null,
+        "FromDate": "2025-10-31T18:30:00.000Z",
+        "ToDate": "2025-11-30T18:29:00.000Z",
+        "Type": "L",
+        "LeadStageIds": null,
+        "LeadStageReasonIds": null,
+        "SystemLeadTagId": null,
+        "StateId": null,
+        "Division": null,
+        "Area": null,
+        "BudgetMin": null,
+        "BudgetMax": null,
+        "AreaMin": null,
+        "AreaMax": null,
+        "MinSiteVisitCount": null,
+        "Furnish": null,
+        "MembershipType": null,
+        "LeadSourceIds": null,
+        "SubSourceIds": null,
+        "LeadRequirementId": null,
+        "LeadUnitTypeId": null,
+        "LeadPropertySubTypeId": null,
+        "SubLocation": null,
+        "DateType": "LeadDate",
+        "IsReturning": null,
+        "LastAssignedUserId": null,
+        "SourcingManagerId": null,
+        "CampaignId": null,
+        "CampaignChannelId": null,
+        "LeadCategoryIds": null,
+        "LeadSubTypeIds": null,
+        "LeadPropertyTypeId": null,
+        "CoOwnerId": null,
+        "SortingId": 0,
+        "LeadSortBy": "LAD",
+        "showCampaignChannel": false
+      },
+      "id": 1762584594316,
+      "isEditing": false
+    },
+    {
+      "name": "test2.2",
+      "value": {
+        "Keyword": "",
+        "PageNumber": 1,
+        "PageSize": 20,
+        "UserId": null,
+        "TeamId": null,
+        "leadType": "ACTIVELEAD",
+        "SelectedTeam": null,
+        "ProjectId": null,
+        "FromDate": "2025-10-31T18:30:00.000Z",
+        "ToDate": "2025-11-30T18:29:00.000Z",
+        "Type": "L",
+        "LeadStageIds": null,
+        "LeadStageReasonIds": null,
+        "SystemLeadTagId": null,
+        "StateId": null,
+        "Division": null,
+        "Area": null,
+        "BudgetMin": null,
+        "BudgetMax": null,
+        "AreaMin": null,
+        "AreaMax": null,
+        "MinSiteVisitCount": null,
+        "Furnish": null,
+        "MembershipType": null,
+        "LeadSourceIds": null,
+        "SubSourceIds": null,
+        "LeadRequirementId": null,
+        "LeadUnitTypeId": null,
+        "LeadPropertySubTypeId": null,
+        "SubLocation": null,
+        "DateType": "LeadDate",
+        "IsReturning": null,
+        "LastAssignedUserId": null,
+        "SourcingManagerId": null,
+        "CampaignId": null,
+        "CampaignChannelId": null,
+        "LeadCategoryIds": null,
+        "LeadSubTypeIds": null,
+        "LeadPropertyTypeId": null,
+        "CoOwnerId": null,
+        "SortingId": 0,
+        "LeadSortBy": "LAD",
+        "showCampaignChannel": false
+      },
+      "id": 1762584600200,
+      "isEditing": false
+    },
+    {
+      "name": "source testying",
+      "value": {
+        "Keyword": "",
+        "PageNumber": 1,
+        "PageSize": 20,
+        "UserId": null,
+        "TeamId": null,
+        "leadType": "ACTIVELEAD",
+        "SelectedTeam": null,
+        "ProjectId": null,
+        "FromDate": null,
+        "ToDate": 66599999,
+        "Type": "L",
+        "LeadStageIds": null,
+        "LeadStageReasonIds": null,
+        "SystemLeadTagId": null,
+        "StateId": null,
+        "Division": null,
+        "Area": null,
+        "BudgetMin": null,
+        "BudgetMax": null,
+        "AreaMin": null,
+        "AreaMax": null,
+        "MinSiteVisitCount": null,
+        "Furnish": null,
+        "MembershipType": null,
+        "LeadSourceIds": [
+          49
+        ],
+        "SubSourceIds": null,
+        "LeadRequirementId": null,
+        "LeadUnitTypeId": null,
+        "LeadPropertySubTypeId": null,
+        "SubLocation": null,
+        "IsReturning": null,
+        "LastAssignedUserId": null,
+        "SourcingManagerId": null,
+        "CampaignId": null,
+        "CampaignChannelId": null,
+        "LeadCategoryIds": null,
+        "LeadSubTypeIds": null,
+        "LeadPropertyTypeId": null,
+        "CoOwnerId": null,
+        "SortingId": 0,
+        "LeadSortBy": "LAD",
+        "showCampaignChannel": false
+      },
+      "id": 1762586210070
+    },
+    {
+      "name": "test source sub source",
+      "value": {
+        "Keyword": "",
+        "PageNumber": 1,
+        "PageSize": 20,
+        "UserId": null,
+        "TeamId": null,
+        "leadType": "ACTIVELEAD",
+        "SelectedTeam": null,
+        "ProjectId": null,
+        "FromDate": null,
+        "ToDate": null,
+        "Type": "L",
+        "LeadStageIds": null,
+        "LeadStageReasonIds": null,
+        "SystemLeadTagId": null,
+        "StateId": null,
+        "Division": null,
+        "Area": null,
+        "BudgetMin": null,
+        "BudgetMax": null,
+        "AreaMin": null,
+        "AreaMax": null,
+        "MinSiteVisitCount": null,
+        "Furnish": null,
+        "MembershipType": null,
+        "LeadSourceIds": [
+          49
+        ],
+        "SubSourceIds": [
+          53694,
+          53858
+        ],
+        "LeadRequirementId": null,
+        "LeadUnitTypeId": null,
+        "LeadPropertySubTypeId": null,
+        "SubLocation": null,
+        "DateType": "LeadDate",
+        "ChannelPartnerIds": null,
+        "IsReturning": null,
+        "LastAssignedUserId": null,
+        "SourcingManagerId": null,
+        "CampaignId": null,
+        "CampaignChannelId": null,
+        "LeadCategoryIds": null,
+        "LeadSubTypeIds": null,
+        "LeadPropertyTypeId": null,
+        "CoOwnerId": null,
+        "SortingId": 0,
+        "LeadSortBy": "LAD",
+        "MicroFilterValue": null,
+        "showCampaignChannel": false
+      },
+      "id": 1762586724417
+    },
+    {
+      "name": "campaign",
+      "value": {
+        "Keyword": "",
+        "PageNumber": 1,
+        "PageSize": 20,
+        "UserId": null,
+        "TeamId": null,
+        "leadType": "ACTIVELEAD",
+        "SelectedTeam": null,
+        "ProjectId": null,
+        "FromDate": null,
+        "ToDate": null,
+        "Type": "L",
+        "LeadStageIds": null,
+        "LeadStageReasonIds": null,
+        "SystemLeadTagId": null,
+        "StateId": null,
+        "Division": null,
+        "Area": null,
+        "BudgetMin": null,
+        "BudgetMax": null,
+        "AreaMin": null,
+        "AreaMax": null,
+        "MinSiteVisitCount": null,
+        "Furnish": null,
+        "MembershipType": null,
+        "LeadSourceIds": null,
+        "SubSourceIds": null,
+        "LeadRequirementId": null,
+        "LeadUnitTypeId": null,
+        "LeadPropertySubTypeId": null,
+        "SubLocation": null,
+        "IsReturning": null,
+        "LastAssignedUserId": null,
+        "SourcingManagerId": null,
+        "CampaignId": 2213,
+        "CampaignChannelId": null,
+        "LeadCategoryIds": null,
+        "LeadSubTypeIds": null,
+        "LeadPropertyTypeId": null,
+        "CoOwnerId": null,
+        "SortingId": 0,
+        "LeadSortBy": "LAD",
+        "showCampaignChannel": false
+      },
+      "id": 1762587579381
+    },
+    {
+      "name": "My testing",
+      "value": {
+        "Keyword": "",
+        "PageNumber": 1,
+        "PageSize": 20,
+        "UserId": null,
+        "TeamId": null,
+        "leadType": "ACTIVELEAD",
+        "SelectedTeam": null,
+        "ProjectId": null,
+        "FromDate": null,
+        "ToDate": null,
+        "Type": "L",
+        "LeadStageIds": [
+          348658
+        ],
+        "LeadStageReasonIds": [
+          9882,
+          9883
+        ],
+        "SystemLeadTagId": null,
+        "StateId": null,
+        "Division": null,
+        "Area": null,
+        "BudgetMin": null,
+        "BudgetMax": null,
+        "AreaMin": null,
+        "AreaMax": null,
+        "MinSiteVisitCount": null,
+        "Furnish": null,
+        "MembershipType": null,
+        "LeadSourceIds": [
+          49
+        ],
+        "SubSourceIds": [
+          53896,
+          53858
+        ],
+        "LeadRequirementId": null,
+        "LeadUnitTypeId": 23,
+        "LeadPropertySubTypeId": 29,
+        "SubLocation": null,
+        "DateType": "LeadDate",
+        "ChannelPartnerIds": null,
+        "IsReturning": null,
+        "LastAssignedUserId": null,
+        "SourcingManagerId": null,
+        "CampaignId": null,
+        "CampaignChannelId": null,
+        "LeadCategoryIds": [],
+        "LeadSubTypeIds": null,
+        "LeadPropertyTypeId": 4,
+        "CoOwnerId": null,
+        "SortingId": 0,
+        "LeadSortBy": "LAD",
+        "MicroFilterValue": null,
+        "showCampaignChannel": false
+      },
+      "id": 1762591433216
+    },
+    {
+      "name": "date testing",
+      "value": {
+        "Keyword": "",
+        "PageNumber": 1,
+        "PageSize": 20,
+        "UserId": null,
+        "TeamId": null,
+        "leadType": "ACTIVELEAD",
+        "SelectedTeam": null,
+        "ProjectId": null,
+        "FromDate": "2025-11-11T18:30:00.000Z",
+        "ToDate": "2025-11-13T18:29:00.000Z",
+        "Type": "L",
+        "LeadStageIds": null,
+        "LeadStageReasonIds": null,
+        "SystemLeadTagId": null,
+        "StateId": null,
+        "Division": null,
+        "Area": null,
+        "BudgetMin": null,
+        "BudgetMax": null,
+        "AreaMin": null,
+        "AreaMax": null,
+        "MinSiteVisitCount": null,
+        "Furnish": null,
+        "MembershipType": null,
+        "LeadSourceIds": null,
+        "SubSourceIds": null,
+        "LeadRequirementId": null,
+        "LeadUnitTypeId": null,
+        "LeadPropertySubTypeId": null,
+        "SubLocation": null,
+        "DateType": "LeadDate",
+        "ChannelPartnerIds": null,
+        "IsReturning": null,
+        "LastAssignedUserId": null,
+        "SourcingManagerId": null,
+        "CampaignId": null,
+        "CampaignChannelId": null,
+        "LeadCategoryIds": null,
+        "LeadSubTypeIds": null,
+        "LeadPropertyTypeId": null,
+        "CoOwnerId": null,
+        "SortingId": 0,
+        "LeadSortBy": "LAD",
+        "MicroFilterValue": null,
+        "showCampaignChannel": false
+      },
+      "id": 1762596372721
+    },
+    {
+      "name": "date 2 testing",
+      "value": {
+        "Keyword": "",
+        "PageNumber": 1,
+        "PageSize": 20,
+        "UserId": null,
+        "TeamId": null,
+        "leadType": "ACTIVELEAD",
+        "SelectedTeam": null,
+        "ProjectId": null,
+        "FromDate": "2025-10-31T18:30:00.000Z",
+        "ToDate": "2025-11-02T18:29:59.000Z",
+        "Type": "L",
+        "LeadStageIds": null,
+        "LeadStageReasonIds": null,
+        "SystemLeadTagId": null,
+        "StateId": null,
+        "Division": null,
+        "Area": null,
+        "BudgetMin": null,
+        "BudgetMax": null,
+        "AreaMin": null,
+        "AreaMax": null,
+        "MinSiteVisitCount": null,
+        "Furnish": null,
+        "MembershipType": null,
+        "LeadSourceIds": null,
+        "SubSourceIds": null,
+        "LeadRequirementId": null,
+        "LeadUnitTypeId": null,
+        "LeadPropertySubTypeId": null,
+        "SubLocation": null,
+        "DateType": "LeadDate",
+        "IsReturning": null,
+        "LastAssignedUserId": null,
+        "SourcingManagerId": null,
+        "CampaignId": null,
+        "CampaignChannelId": null,
+        "LeadCategoryIds": null,
+        "LeadSubTypeIds": null,
+        "LeadPropertyTypeId": null,
+        "CoOwnerId": null,
+        "SortingId": 0,
+        "LeadSortBy": "LAD",
+        "showCampaignChannel": false
+      },
+      "id": 1762754967868
+    },
+    {
+      "name": "date3 filter",
+      "value": {
+        "Keyword": "",
+        "PageNumber": 1,
+        "PageSize": 20,
+        "UserId": null,
+        "TeamId": null,
+        "leadType": "ACTIVELEAD",
+        "SelectedTeam": null,
+        "ProjectId": null,
+        "FromDate": "2025-10-31T18:30:00.000Z",
+        "ToDate": "2025-11-30T18:29:00.000Z",
+        "Type": "L",
+        "LeadStageIds": null,
+        "LeadStageReasonIds": null,
+        "SystemLeadTagId": null,
+        "StateId": null,
+        "Division": null,
+        "Area": null,
+        "BudgetMin": null,
+        "BudgetMax": null,
+        "AreaMin": null,
+        "AreaMax": null,
+        "MinSiteVisitCount": null,
+        "Furnish": null,
+        "MembershipType": null,
+        "LeadSourceIds": null,
+        "SubSourceIds": null,
+        "LeadRequirementId": null,
+        "LeadUnitTypeId": null,
+        "LeadPropertySubTypeId": null,
+        "SubLocation": null,
+        "DateType": "LeadDate",
+        "IsReturning": null,
+        "LastAssignedUserId": null,
+        "SourcingManagerId": null,
+        "CampaignId": null,
+        "CampaignChannelId": null,
+        "LeadCategoryIds": null,
+        "LeadSubTypeIds": null,
+        "LeadPropertyTypeId": null,
+        "CoOwnerId": null,
+        "SortingId": 0,
+        "LeadSortBy": "LAD",
+        "showCampaignChannel": false
+      },
+      "id": 1762759389040
+    },
+    {
+      "name": "new date testing",
+      "value": {
+        "Keyword": "",
+        "PageNumber": 1,
+        "PageSize": 20,
+        "UserId": null,
+        "TeamId": null,
+        "leadType": "ACTIVELEAD",
+        "SelectedTeam": null,
+        "ProjectId": null,
+        "FromDate": "2025-10-31T18:30:00.000Z",
+        "ToDate": "2025-11-11T18:29:59.000Z",
+        "Type": "L",
+        "LeadStageIds": null,
+        "LeadStageReasonIds": null,
+        "SystemLeadTagId": null,
+        "StateId": null,
+        "Division": null,
+        "Area": null,
+        "BudgetMin": null,
+        "BudgetMax": null,
+        "AreaMin": null,
+        "AreaMax": null,
+        "MinSiteVisitCount": null,
+        "Furnish": null,
+        "MembershipType": null,
+        "LeadSourceIds": null,
+        "SubSourceIds": null,
+        "LeadRequirementId": null,
+        "LeadUnitTypeId": null,
+        "LeadPropertySubTypeId": null,
+        "SubLocation": null,
+        "DateType": "LeadDate",
+        "ChannelPartnerIds": null,
+        "IsReturning": null,
+        "LastAssignedUserId": null,
+        "SourcingManagerId": null,
+        "CampaignId": null,
+        "CampaignChannelId": null,
+        "LeadCategoryIds": null,
+        "LeadSubTypeIds": null,
+        "LeadPropertyTypeId": null,
+        "CoOwnerId": null,
+        "SortingId": 0,
+        "LeadSortBy": "LAD",
+        "MicroFilterValue": null,
+        "showCampaignChannel": false
+      },
+      "id": 1762759976604
+    },
+    {
+      "name": "date test",
+      "value": {
+        "Keyword": "",
+        "PageNumber": 1,
+        "PageSize": 20,
+        "UserId": null,
+        "TeamId": null,
+        "leadType": "ACTIVELEAD",
+        "SelectedTeam": null,
+        "ProjectId": null,
+        "FromDate": "2025-10-31T18:30:00.000Z",
+        "ToDate": "2025-11-11T18:29:59.000Z",
+        "Type": "L",
+        "LeadStageIds": null,
+        "LeadStageReasonIds": null,
+        "SystemLeadTagId": null,
+        "StateId": null,
+        "Division": null,
+        "Area": null,
+        "BudgetMin": null,
+        "BudgetMax": null,
+        "AreaMin": null,
+        "AreaMax": null,
+        "MinSiteVisitCount": null,
+        "Furnish": null,
+        "MembershipType": null,
+        "LeadSourceIds": null,
+        "SubSourceIds": null,
+        "LeadRequirementId": null,
+        "LeadUnitTypeId": null,
+        "LeadPropertySubTypeId": null,
+        "SubLocation": null,
+        "DateType": "LeadDate",
+        "ChannelPartnerIds": null,
+        "IsReturning": null,
+        "LastAssignedUserId": null,
+        "SourcingManagerId": null,
+        "CampaignId": null,
+        "CampaignChannelId": null,
+        "LeadCategoryIds": null,
+        "LeadSubTypeIds": null,
+        "LeadPropertyTypeId": null,
+        "CoOwnerId": null,
+        "SortingId": 0,
+        "LeadSortBy": "LAD",
+        "MicroFilterValue": null,
+        "showCampaignChannel": false
+      },
+      "id": 1762759989410
+    }
+  ],
+  "columnsVisibility_UserTask": [
+    {
+      "name": "Selection",
+      "visible": true,
+      "key": "Selection"
+    },
+    {
+      "name": "Action",
+      "visible": true,
+      "key": "Action"
+    },
+    {
+      "name": "Sr No",
+      "visible": true,
+      "key": "SrNo"
+    },
+    {
+      "name": "Created Date",
+      "visible": true,
+      "key": "CreatedAt"
+    },
+    {
+      "name": "Lead",
+      "visible": true,
+      "key": "Lead"
+    },
+    {
+      "name": "Mobile",
+      "visible": true,
+      "key": "Mobile"
+    },
+    {
+      "name": "Type",
+      "visible": true,
+      "key": "Type"
+    },
+    {
+      "name": "Assigned By",
+      "visible": true,
+      "key": "CreatedBy"
+    },
+    {
+      "name": "Assigned To",
+      "visible": true,
+      "key": "User"
+    },
+    {
+      "name": "Schedule Date",
+      "visible": true,
+      "key": "EndDateTime"
+    },
+    {
+      "name": "Title",
+      "visible": true,
+      "key": "Title"
+    },
+    {
+      "name": "Remark",
+      "visible": true,
+      "key": "Remark"
+    },
+    {
+      "name": "Activity Type",
+      "visible": true,
+      "key": "LeadActivityType"
+    },
+    {
+      "name": "Stage",
+      "visible": true,
+      "key": "LeadStage"
+    },
+    {
+      "name": "Status",
+      "visible": true,
+      "key": "Status"
+    },
+    {
+      "name": "Completed On",
+      "visible": true,
+      "key": "CompletedOn"
+    },
+    {
+      "name": "Completed By",
+      "visible": true,
+      "key": "CompletedBy"
+    }
+  ],
+  "columnsVisibility_contact": [
+    {
+      "name": "Selection",
+      "visible": true,
+      "key": "Selection"
+    },
+    {
+      "name": "Action",
+      "visible": true,
+      "key": "Action"
+    },
+    {
+      "name": "Sr No",
+      "visible": true,
+      "key": "SrNo"
+    },
+    {
+      "name": "Date",
+      "visible": true,
+      "key": "ContactDate"
+    },
+    {
+      "name": "Name",
+      "visible": true,
+      "key": "ContactName"
+    },
+    {
+      "name": "Email",
+      "visible": true,
+      "key": "Email"
+    },
+    {
+      "name": "Primary Number",
+      "visible": true,
+      "key": "PrimaryNumber"
+    },
+    {
+      "name": "Alternate Number",
+      "visible": false,
+      "key": "AlternateNumbers"
+    },
+    {
+      "name": "Type",
+      "visible": true,
+      "key": "CompanyContactTypeName"
+    },
+    {
+      "name": "Contact Stage",
+      "visible": true,
+      "key": "CompanyContactStageName"
+    },
+    {
+      "name": "Source",
+      "visible": true,
+      "key": "ContactSourceName"
+    },
+    {
+      "name": "Categories",
+      "visible": false,
+      "key": "ContactCategories"
+    },
+    {
+      "name": "Sub Categories",
+      "visible": false,
+      "key": "ContactSubCategories"
+    },
+    {
+      "name": "Tags",
+      "visible": true,
+      "key": "ContactTags"
+    },
+    {
+      "name": "Sales Agent",
+      "visible": true,
+      "key": "AssignedToName"
+    },
+    {
+      "name": "Address",
+      "visible": false,
+      "key": "Address"
+    },
+    {
+      "name": "Assignment Count",
+      "visible": true,
+      "key": "AssignmentCount"
+    },
+    {
+      "name": "Assigned Date",
+      "visible": true,
+      "key": "AssignedDate"
+    },
+    {
+      "name": "Last Assigned Date",
+      "visible": true,
+      "key": "LastAssignedDate"
+    },
+    {
+      "name": "Last Assigned",
+      "visible": true,
+      "key": "LastAssignedToName"
+    },
+    {
+      "name": "Last Activity Date",
+      "visible": true,
+      "key": "LastActivityDate"
+    },
+    {
+      "name": "Last Activity Remark",
+      "visible": true,
+      "key": "LastActivityRemark"
+    },
+    {
+      "name": "Next Followup Date",
+      "visible": false,
+      "key": "NextFollowupDate"
+    },
+    {
+      "name": "Next Followup Remark",
+      "visible": false,
+      "key": "NextFollowupRemark"
+    },
+    {
+      "name": "Created Date",
+      "visible": false,
+      "key": "CreatedDate"
+    }
+  ],
+  "columnsVisibility_leads": [
+    {
+      "name": "Selection",
+      "visible": true,
+      "key": "Selection"
+    },
+    {
+      "name": "Action",
+      "visible": true,
+      "key": "Action"
+    },
+    {
+      "name": "Sr No",
+      "visible": true,
+      "key": "SrNo"
+    },
+    {
+      "name": "Lead Id",
+      "visible": true,
+      "key": "LeadNumber"
+    },
+    {
+      "name": "Date",
+      "visible": true,
+      "key": "LeadDate"
+    },
+    {
+      "name": "Assigned Date",
+      "visible": true,
+      "key": "AssignedDate"
+    },
+    {
+      "name": "Returned Date",
+      "visible": false,
+      "key": "ReturnedAt"
+    },
+    {
+      "name": "Last Activity Date",
+      "visible": false,
+      "key": "LastContactedAt"
+    },
+    {
+      "name": "Status",
+      "visible": true,
+      "key": "status"
+    },
+    {
+      "name": "Name",
+      "visible": true,
+      "key": "ClientName"
+    },
+    {
+      "name": "Primary No",
+      "visible": true,
+      "key": "ClientContactInternational"
+    },
+    {
+      "name": "Secondary No",
+      "visible": false,
+      "key": "SecondaryNumberInternational"
+    },
+    {
+      "name": "Email",
+      "visible": false,
+      "key": "ClientEmail"
+    },
+    {
+      "name": "Lead Stage",
+      "visible": true,
+      "key": "LeadStage"
+    },
+    {
+      "name": "Company Stage Reason",
+      "visible": true,
+      "key": "CompanyStageReason"
+    },
+    {
+      "name": "Source",
+      "visible": true,
+      "key": "Source"
+    },
+    {
+      "name": "Sub Source",
+      "visible": false,
+      "key": "SubSource"
+    },
+    {
+      "name": "Project",
+      "visible": true,
+      "key": "ProjectName"
+    },
+    {
+      "name": "Sales Agent",
+      "visible": true,
+      "key": "OwnerName"
+    },
+    {
+      "name": "Co-Owners",
+      "visible": false,
+      "key": "CoOwner"
+    },
+    {
+      "name": "Channel Partner",
+      "visible": true,
+      "key": "ChannelPartnerName"
+    },
+    {
+      "name": "Sourcing Manager",
+      "visible": true,
+      "key": "SourcingManagerName"
+    },
+    {
+      "name": "Category",
+      "visible": false,
+      "key": "LeadCategoryName"
+    },
+    {
+      "name": "Visitor Type",
+      "visible": false,
+      "key": "LeadSubTypeName"
+    },
+    {
+      "name": "Requirement",
+      "visible": true,
+      "key": "Requirement"
+    },
+    {
+      "name": "Sub Location",
+      "visible": true,
+      "key": "SubLocation"
+    },
+    {
+      "name": "Budget",
+      "visible": true,
+      "key": "Budget"
+    },
+    {
+      "name": "Remark",
+      "visible": true,
+      "key": "Remark"
+    },
+    {
+      "name": "Last Assigned",
+      "visible": false,
+      "key": "LastAssignedDate"
+    },
+    {
+      "name": "Site Visit",
+      "visible": true,
+      "key": "SiteVisitCounductedCount"
+    },
+    {
+      "name": "Last Activity",
+      "visible": true,
+      "key": "LastRemarkDate"
+    },
+    {
+      "name": "Employment Type",
+      "visible": false,
+      "key": "EmploymentType"
+    },
+    {
+      "name": "Income",
+      "visible": false,
+      "key": "Income"
+    },
+    {
+      "name": "Designation",
+      "visible": false,
+      "key": "Designation"
+    },
+    {
+      "name": "Company Name",
+      "visible": false,
+      "key": "CompanyName"
+    },
+    {
+      "name": "Company Address",
+      "visible": false,
+      "key": "CompanyAddress"
+    },
+    {
+      "name": "Campaign",
+      "visible": false,
+      "key": "Campaign"
+    },
+    {
+      "name": "Campaign Channel",
+      "visible": false,
+      "key": "CampaignChannel"
+    },
+    {
+      "name": "Ad Name",
+      "visible": false,
+      "key": "AdName"
+    },
+    {
+      "name": "UTM Parameter",
+      "visible": false,
+      "key": "UtmParameter"
+    },
+    {
+      "name": "First Stage Name",
+      "visible": false,
+      "key": "FirstStageName"
+    },
+    {
+      "name": "First Stage Updated Date",
+      "visible": false,
+      "key": "FirstStageUpdatedDate"
+    }
+  ]
+}
